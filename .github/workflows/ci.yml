@@ -23,7 +23,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       # Read from .nvmrc rather than pinned here, so CI and a contributor
       # running `nvm use` cannot drift apart.
       - uses: actions/setup-node@v5
