@@ -1,0 +1,139 @@
+{
+  "site": {
+    "name": "Meridian",
+    "tagline": "Ein kleines Studio, das Tools für Menschen entwickelt, die in mehreren Sprachen lesen."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Über uns",
+    "blog": "Journal",
+    "cta": "Kontakt",
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "picker": {
+    "label": "Sprache",
+    "current": "Aktuelle Sprache"
+  },
+  "notice": {
+    "untranslated": "Diese Seite wurde noch nicht ins {language} übersetzt. Sie lesen das englische Original.",
+    "stale": "Das englische Original dieser Seite wurde nach der Übersetzung aktualisiert."
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "builtWith": "Gebaut mit Astro. Übersetzt mit AI Glot.",
+    "sections": "Bereiche",
+    "languages": "Sprachen"
+  },
+  "home": {
+    "meta": {
+      "title": "Meridian: Tools für mehrsprachige Teams",
+      "description": "Meridian ist ein kleines Studio, das schnelle, unaufdringliche Tools für Teams entwickelt, die in mehreren Sprachen gleichzeitig publizieren."
+    },
+    "hero": {
+      "eyebrow": "Studio",
+      "title": "Einmal publizieren. Überall lesen.",
+      "body": "Wir entwickeln kleine, schnelle Tools für Teams, deren Leserschaft nicht dieselbe Sprache spricht. Keine Dashboards, die niemand öffnet, keine Lizenzkosten pro Nutzer, keine Wasserzeichen auf Ihren Arbeiten.",
+      "primary": "Journal lesen",
+      "secondary": "Über das Studio"
+    },
+    "features": {
+      "title": "Woran wir arbeiten",
+      "body": "Drei Probleme, ausgewählt, weil wir selbst immer wieder darauf gestoßen sind.",
+      "items": [
+        {
+          "title": "Inhalt, der synchron bleibt",
+          "body": "Eine Übersetzung ist nur nützlich, solange sie mit dem Original übereinstimmt. Wir entwickeln die Prüfung, die Ihnen zeigt, wann dies nicht mehr der Fall ist."
+        },
+        {
+          "title": "Seiten, die sofort laden",
+          "body": "Statischer Output, keine Framework-Runtime im Browser, kein Layout Shift. Eine Seite sollte lesbar sein, bevor man überhaupt bemerkt, dass sie geladen wurde."
+        },
+        {
+          "title": "Tools, die Ihr Team besitzt",
+          "body": "Einfache Dateien in einem Repository, das Sie kontrollieren, lesbar für Menschen und Maschinen. Nichts Wichtiges liegt in der Datenbank eines anderen."
+        }
+      ]
+    },
+    "numbers": {
+      "title": "Das Studio in vier Zahlen",
+      "items": [
+        {
+          "value": "4",
+          "label": "veröffentlichte Sprachen"
+        },
+        {
+          "value": "12",
+          "label": "abgeschlossene Projekte"
+        },
+        {
+          "value": "2019",
+          "label": "gegründet"
+        },
+        {
+          "value": "6",
+          "label": "Personen"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Arbeiten Sie an etwas Mehrsprachigem?",
+      "body": "Wir übernehmen zwei bis drei Projekte pro Jahr. Erzählen Sie uns, was Sie bauen, und wir sagen Ihnen ehrlich, ob wir das richtige Studio dafür sind.",
+      "action": "Kontakt aufnehmen"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Über Meridian",
+      "description": "Wer wir sind, wie wir arbeiten und die drei Regeln, an die wir uns strikt halten."
+    },
+    "title": "Über das Studio",
+    "lead": "Meridian besteht aus sechs Personen in zwei Städten. Seit 2019 entwickeln wir Software für mehrsprachige Publisher, wobei wir den Großteil immer noch händisch schreiben.",
+    "sections": [
+      {
+        "title": "Wie wir arbeiten",
+        "body": "Ein Projekt nach dem anderen, gemeinsam mit den Personen, die es später warten werden. Wir schreiben die Dokumentation während der Entwicklung, nicht danach, denn die Version, die erst im Nachhinein erstellt wird, liest niemand."
+      },
+      {
+        "title": "Was wir glauben",
+        "body": "Ein Tool sollte lesbar sein. Wenn man eine Datei nicht öffnen und verstehen kann, was sie tut, besitzt man sie nicht, ungeachtet der Lizenz. Deshalb liefern wir alles als Klartext in einem Repository aus, das Sie kontrollieren."
+      },
+      {
+        "title": "Wo wir sind",
+        "body": "Lissabon und Berlin, fünf Stunden Zeitüberschneidung und in keiner Stadt ein Büro. Wir treffen uns zweimal im Jahr persönlich, was sich als genau richtig herausgestellt hat."
+      }
+    ],
+    "team": {
+      "title": "Das Team",
+      "members": [
+        {
+          "name": "Ada Fournier",
+          "role": "Gründer, Engineering"
+        },
+        {
+          "name": "Bruno Reis",
+          "role": "Design"
+        },
+        {
+          "name": "Clara Wenzel",
+          "role": "Redaktion"
+        },
+        {
+          "name": "Dario Estévez",
+          "role": "Infrastruktur"
+        }
+      ]
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Journal — Meridian",
+      "description": "Notizen zur Entwicklung mehrsprachiger Produkte: was funktionierte, was scheiterte und was wir heute anders machen würden."
+    },
+    "title": "Journal",
+    "lead": "Notizen aus dem Studio. Was wir gebaut haben, was kaputtging und was wir anders machen würden.",
+    "readMore": "Lesen",
+    "published": "Veröffentlicht",
+    "back": "Zurück zum Journal",
+    "empty": "Noch nichts veröffentlicht."
+  }
+}

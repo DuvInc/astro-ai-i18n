@@ -1,0 +1,139 @@
+{
+  "site": {
+    "name": "Meridian",
+    "tagline": "Un petit studio qui crée des outils pour ceux qui lisent en plusieurs langues."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "blog": "Journal",
+    "cta": "Contact",
+    "skipToContent": "Aller au contenu"
+  },
+  "picker": {
+    "label": "Langue",
+    "current": "Langue actuelle"
+  },
+  "notice": {
+    "untranslated": "Cette page n'a pas encore été traduite en {language}. Vous lisez la version originale en anglais.",
+    "stale": "L'original anglais de cette page a été modifié depuis cette traduction."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "builtWith": "Construit avec Astro. Traduit avec AI Glot.",
+    "sections": "Sections",
+    "languages": "Langues"
+  },
+  "home": {
+    "meta": {
+      "title": "Meridian : des outils pour les équipes multilingues",
+      "description": "Meridian est un petit studio créant des outils rapides et discrets pour les équipes qui publient simultanément en plusieurs langues."
+    },
+    "hero": {
+      "eyebrow": "Studio",
+      "title": "Publiez une fois. Lisez partout.",
+      "body": "Nous créons des outils compacts et rapides pour les équipes dont les lecteurs ne parlent pas tous la même langue. Pas de tableaux de bord inutiles, pas de tarification par utilisateur, pas de filigrane sur vos travaux.",
+      "primary": "Lire le journal",
+      "secondary": "À propos du studio"
+    },
+    "features": {
+      "title": "Nos axes de travail",
+      "body": "Trois problèmes, choisis parce que nous y avons nous-mêmes été confrontés à maintes reprises.",
+      "items": [
+        {
+          "title": "Un contenu toujours synchronisé",
+          "body": "Une traduction n'est utile que tant qu'elle correspond à l'original. Nous créons le mécanisme qui vous avertit dès qu'elle ne correspond plus."
+        },
+        {
+          "title": "Des pages au chargement instantané",
+          "body": "Sortie statique, aucun runtime de framework dans le navigateur, aucun saut de mise en page. Une page doit être lisible avant même qu'on s'aperçoive qu'elle est chargée."
+        },
+        {
+          "title": "Des outils que votre équipe maîtrise",
+          "body": "Des fichiers simples dans un dépôt que vous contrôlez, lisibles par l'humain et par la machine. Rien d'important ne réside dans la base de données d'un tiers."
+        }
+      ]
+    },
+    "numbers": {
+      "title": "Le studio en quatre chiffres",
+      "items": [
+        {
+          "value": "4",
+          "label": "langues publiées"
+        },
+        {
+          "value": "12",
+          "label": "projets livrés"
+        },
+        {
+          "value": "2019",
+          "label": "fondation"
+        },
+        {
+          "value": "6",
+          "label": "personnes"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Vous travaillez sur un projet multilingue ?",
+      "body": "Nous acceptons deux ou trois projets par an. Dites-nous ce que vous construisez et nous vous dirons honnêtement si nous sommes le studio adapté.",
+      "action": "Nous contacter"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "À propos de Meridian",
+      "description": "Qui nous sommes, comment nous travaillons et les trois règles que nous ne transgressons jamais."
+    },
+    "title": "À propos du studio",
+    "lead": "Meridian se compose de six personnes réparties dans deux villes. Nous concevons des logiciels pour les éditeurs multilingues depuis 2019, et nous écrivons toujours la majeure partie du code à la main.",
+    "sections": [
+      {
+        "title": "Notre façon de travailler",
+        "body": "Un seul projet à la fois, en présence des personnes qui assureront sa maintenance. Nous rédigeons la documentation pendant le développement, et non après, car la version écrite a posteriori est celle que personne ne lit."
+      },
+      {
+        "title": "Nos convictions",
+        "body": "Un outil doit être lisible. Si vous ne pouvez pas ouvrir un fichier pour comprendre son fonctionnement, vous n'en êtes pas le propriétaire, peu importe la licence. C'est pourquoi tout ce que nous livrons est en texte brut dans un dépôt que vous contrôlez."
+      },
+      {
+        "title": "Où nous sommes",
+        "body": "Lisbonne et Berlin, cinq heures de chevauchement, et aucun bureau. Nous nous réunissons en personne deux fois par an, ce qui s'avère être exactement suffisant."
+      }
+    ],
+    "team": {
+      "title": "L'équipe",
+      "members": [
+        {
+          "name": "Ada Fournier",
+          "role": "Fondateur, ingénierie"
+        },
+        {
+          "name": "Bruno Reis",
+          "role": "Design"
+        },
+        {
+          "name": "Clara Wenzel",
+          "role": "Éditorial"
+        },
+        {
+          "name": "Dario Estévez",
+          "role": "Infrastructure"
+        }
+      ]
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Journal — Meridian",
+      "description": "Notes sur la création de produits multilingues: ce qui a fonctionné, ce qui a échoué et ce que nous ferions différemment."
+    },
+    "title": "Journal",
+    "lead": "Notes du studio. Ce que nous avons construit, ce qui a échoué et ce que nous ferions différemment.",
+    "readMore": "Lire",
+    "published": "Publié le",
+    "back": "Retour au journal",
+    "empty": "Rien n'a été publié pour le moment."
+  }
+}

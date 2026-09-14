@@ -1,0 +1,115 @@
+{
+  "site": {
+    "name": "Meridian",
+    "tagline": "A small studio that builds tools for people who read in more than one language."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Journal",
+    "cta": "Get in touch",
+    "skipToContent": "Skip to content"
+  },
+  "picker": {
+    "label": "Language",
+    "current": "Current language"
+  },
+  "notice": {
+    "untranslated": "This page has not been translated into {language} yet. You are reading the English original.",
+    "stale": "The English original of this page changed after this translation was made."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Astro. Translated with AI Glot.",
+    "sections": "Sections",
+    "languages": "Languages"
+  },
+  "home": {
+    "meta": {
+      "title": "Meridian — tools for multilingual teams",
+      "description": "Meridian is a small studio building quiet, fast tools for teams that publish in several languages at once."
+    },
+    "hero": {
+      "eyebrow": "Studio",
+      "title": "Publish once. Read everywhere.",
+      "body": "We build small, fast tools for teams whose readers do not all speak the same language. No dashboards nobody opens, no per-seat pricing, no watermark on your work.",
+      "primary": "Read the journal",
+      "secondary": "About the studio"
+    },
+    "features": {
+      "title": "What we work on",
+      "body": "Three problems, picked because they are the ones we kept running into ourselves.",
+      "items": [
+        {
+          "title": "Content that stays in sync",
+          "body": "A translation is only useful while it matches the original. We build the check that tells you when it stopped matching."
+        },
+        {
+          "title": "Pages that load at once",
+          "body": "Static output, no framework runtime in the browser, no layout shift. A page should be readable before anyone notices it arrived."
+        },
+        {
+          "title": "Tools your team can own",
+          "body": "Plain files in a repository you control, readable by a person and by a machine. Nothing important lives in somebody else's database."
+        }
+      ]
+    },
+    "numbers": {
+      "title": "The studio in four numbers",
+      "items": [
+        { "value": "4", "label": "languages published" },
+        { "value": "12", "label": "projects shipped" },
+        { "value": "2019", "label": "founded" },
+        { "value": "6", "label": "people" }
+      ]
+    },
+    "cta": {
+      "title": "Working on something multilingual?",
+      "body": "We take on two or three projects a year. Tell us what you are building and we will tell you honestly whether we are the right studio for it.",
+      "action": "Get in touch"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Meridian",
+      "description": "Who we are, how we work, and the three rules we do not break."
+    },
+    "title": "About the studio",
+    "lead": "Meridian is six people in two cities. We have been building software for multilingual publishers since 2019, and we still write most of it by hand.",
+    "sections": [
+      {
+        "title": "How we work",
+        "body": "One project at a time, with the people who will maintain it afterwards in the room. We write the documentation while we build, not after, because the version written afterwards is the one nobody reads."
+      },
+      {
+        "title": "What we believe",
+        "body": "A tool should be legible. If you cannot open a file and see what it does, you do not own it, whatever the licence says. That is why everything we ship is plain text in a repository you control."
+      },
+      {
+        "title": "Where we are",
+        "body": "Lisbon and Berlin, five hours of overlap, and an office in neither. We meet in person twice a year, which turns out to be exactly enough."
+      }
+    ],
+    "team": {
+      "title": "The people",
+      "members": [
+        { "name": "Ada Fournier", "role": "Founder, engineering" },
+        { "name": "Bruno Reis", "role": "Design" },
+        { "name": "Clara Wenzel", "role": "Editorial" },
+        { "name": "Dario Estévez", "role": "Infrastructure" }
+      ]
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Journal — Meridian",
+      "description": "Notes on building multilingual products: what worked, what broke, and what we would do differently."
+    },
+    "title": "Journal",
+    "lead": "Notes from the studio. What we built, what broke, and what we would do differently.",
+    "readMore": "Read",
+    "published": "Published",
+    "back": "Back to the journal",
+    "empty": "Nothing published yet."
+  }
+}

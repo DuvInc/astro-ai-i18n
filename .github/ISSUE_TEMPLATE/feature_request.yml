@@ -1,0 +1,26 @@
+name: Feature request
+description: Something this repository should be able to express and cannot.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you are trying to do
+      description: The situation, not the solution. What does your site need that this cannot say?
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What you do instead today
+      description: >
+        If the workaround is editing a component, a route or a script, say
+        which: that usually means the gap is in `src/i18n/config.ts`.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This does not need a new dependency, or I have said why it does.
