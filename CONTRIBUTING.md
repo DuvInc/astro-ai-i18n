@@ -59,8 +59,11 @@ test failures that name the file, not warnings.
 record the reasoning and, where it matters, what went wrong before. A comment
 restating the line below it is noise.
 
-**No em dashes** in code comments, documentation or copy. The English copy is
-the source every translation inherits from, in three languages at once.
+**No em dashes in the site's copy**: `src/i18n/strings/en.json` and the posts
+under `src/content/blog/en/`. That copy is the source every translation
+inherits from, in three languages at once, and an em dash is one of the
+clearest tells that a sentence was written by a machine. Prose in comments,
+documentation and pull requests is yours to punctuate.
 
 ## Changes that need a conversation first
 

@@ -73,7 +73,7 @@ const dateFormat = new Intl.DateTimeFormat(localeConfig[locale].language, {
     <Base
       locale={locale}
       path={`/blog/${slug}`}
-      title={`${post.entry.data.title} — ${copy.site.name}`}
+      title={`${post.entry.data.title} · ${copy.site.name}`}
       description={post.entry.data.description}
       translated={post.translated}
       availableIn={availableIn}

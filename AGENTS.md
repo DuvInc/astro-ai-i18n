@@ -309,8 +309,11 @@ the locale list.
 - **Ask before approving** when a run is larger than the user expects. `status`
   prints the estimate; show it.
 - **Write English copy in the register of the existing copy**: direct,
-  concrete, no marketing adjectives, no em dashes. Translations inherit
-  whatever the English does, in three languages at once.
+  concrete, no marketing adjectives, and no em dashes in `en.json` or an
+  English post. Translations inherit whatever the English does, in three
+  languages at once, and an em dash is the clearest tell that a machine wrote
+  the sentence. Comments and documentation are prose, not copy, and are yours
+  to punctuate.
 - **Do not add a dependency** without saying why in the pull request.
 
 ## Things that have bitten this shape of site before

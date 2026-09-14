@@ -26,7 +26,7 @@
   },
   "home": {
     "meta": {
-      "title": "Meridian : des outils pour les équipes multilingues",
+      "title": "Meridian: outils pour équipes multilingues",
       "description": "Meridian est un petit studio créant des outils rapides et discrets pour les équipes qui publient simultanément en plusieurs langues."
     },
     "hero": {
@@ -126,7 +126,7 @@
   },
   "blog": {
     "meta": {
-      "title": "Journal — Meridian",
+      "title": "Journal, par Meridian",
       "description": "Notes sur la création de produits multilingues: ce qui a fonctionné, ce qui a échoué et ce que nous ferions différemment."
     },
     "title": "Journal",
