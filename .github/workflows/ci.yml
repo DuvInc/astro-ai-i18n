@@ -1,0 +1,42 @@
+name: CI
+
+# Pull requests only get the default read-only token, and nothing here needs
+# more. No secret is referenced, and `pull_request` (never
+# `pull_request_target`) means a fork's code cannot reach one.
+#
+# Note what is NOT here: a translation step. Running `i18n:translate` in CI
+# would spend credits on every push and commit machine output nobody read.
+# Translating is a deliberate act with a diff to review; CI only reports.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      # Read from .nvmrc rather than pinned here, so CI and a contributor
+      # running `nvm use` cannot drift apart.
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # Assertions that need no key and no network, then a real build and a
+      # typecheck.
+      - run: npm test
+      # Fails on an orphaned translation — a file with no English source, which
+      # is served to nobody and looks like shipped work. Translation debt is
+      # only reported: a site is permanently half-translated, and that is the
+      # steady state rather than a broken build. Add `-- --strict` if your
+      # project wants the opposite.
+      - run: npm run i18n:check

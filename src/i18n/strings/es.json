@@ -1,0 +1,96 @@
+{
+  "site": {
+    "name": "Meridian",
+    "tagline": "Un pequeño estudio que crea herramientas para personas que leen en más de un idioma."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "blog": "Journal",
+    "cta": "Contacto",
+    "skipToContent": "Saltar al contenido"
+  },
+  "picker": {
+    "label": "Idioma",
+    "current": "Idioma actual"
+  },
+  "notice": {
+    "untranslated": "Esta página aún no ha sido traducida al {language}. Estás leyendo el original en inglés.",
+    "stale": "El original en inglés de esta página ha cambiado desde que se realizó esta traducción."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Creado con Astro. Traducido con AI Glot.",
+    "sections": "Secciones",
+    "languages": "Idiomas"
+  },
+  "home": {
+    "meta": {
+      "title": "Meridian: herramientas para equipos multilingües",
+      "description": "Meridian es un pequeño estudio que crea herramientas rápidas y sencillas para equipos que publican en varios idiomas a la vez."
+    },
+    "hero": {
+      "eyebrow": "Estudio",
+      "title": "Publica una vez. Lee en todas partes.",
+      "body": "Creamos herramientas pequeñas y rápidas para equipos cuyos lectores no hablan todos el mismo idioma. Sin paneles que nadie abre, sin precios por usuario, sin marcas de agua en tu trabajo.",
+      "primary": "Leer el Journal",
+      "secondary": "Sobre el estudio"
+    },
+    "features": {
+      "title": "En qué trabajamos",
+      "body": "Tres problemas, elegidos porque son los que nosotros mismos no dejábamos de encontrar.",
+      "items": [
+        {
+          "title": "Contenido siempre sincronizado",
+          "body": "Una traducción solo es útil mientras coincida con el original. Creamos el sistema de verificación que te avisa cuando deja de coincidir."
+        },
+        {
+          "title": "Páginas de carga instantánea",
+          "body": "Salida estática, sin tiempo de ejecución del framework en el navegador y sin saltos de diseño. Una página debe ser legible antes de que alguien note que ha llegado."
+        },
+        {
+          "title": "Herramientas que tu equipo controla",
+          "body": "Archivos planos en un repositorio que tú controlas, legibles tanto por personas como por máquinas. Nada importante reside en la base de datos de terceros."
+        }
+      ]
+    },
+    "numbers": {
+      "title": "El estudio en cuatro cifras",
+      "items": [
+        {
+          "value": "4",
+          "label": "idiomas publicados"
+        },
+        {
+          "value": "12",
+          "label": "proyectos lanzados"
+        },
+        {
+          "value": "2019",
+          "label": "fundado en"
+        },
+        {
+          "value": "6",
+          "label": "personas"
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Trabajando en algo multilingüe?",
+      "body": "Aceptamos dos o tres proyectos al año. Cuéntanos qué estás construyendo y te diremos honestamente si somos el estudio adecuado.",
+      "action": "Contactar"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Journal — Meridian",
+      "description": "Notas sobre la creación de productos multilingües: qué funcionó, qué falló y qué haríamos de forma diferente."
+    },
+    "title": "Journal",
+    "lead": "Notas del estudio. Qué construimos, qué falló y qué haríamos de forma diferente.",
+    "readMore": "Leer",
+    "published": "Publicado",
+    "back": "Volver al journal",
+    "empty": "Aún no hay publicaciones."
+  }
+}
