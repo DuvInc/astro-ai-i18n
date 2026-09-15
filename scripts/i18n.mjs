@@ -119,9 +119,12 @@ function uiWrite(locale, translated, english) {
    * `name` stay English), then whatever the locale already had so untouched
    * strings survive, then what came back.
    */
-  const english = JSON.parse(read(`${UI_DIR}/en.json`));
-  const merged = structuredClone(english);
-  const known = new Set(Object.keys(flatten(english)));
+  /* `source` rather than `english`: this function already takes a parameter by
+     that name, holding the FLATTENED English strings. Two different shapes
+     under one name is how the first version of this shadowed itself. */
+  const source = JSON.parse(read(`${UI_DIR}/en.json`));
+  const merged = structuredClone(source);
+  const known = new Set(Object.keys(flatten(source)));
   if (existsSync(path.join(ROOT, file))) {
     for (const [pointer, text] of Object.entries(flatten(JSON.parse(read(file))))) {
       /*
