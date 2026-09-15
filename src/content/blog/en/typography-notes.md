@@ -2,7 +2,6 @@
 title: Notes on setting type for four alphabets
 description: Small decisions about line length, numerals and quotation marks that stop a page looking translated.
 date: 2026-07-01
-author: Bruno Reis
 glyph: split
 ---
 

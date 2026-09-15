@@ -71,6 +71,9 @@ test('translated posts keep the data fields of their source', () => {
       const source = read(`src/content/blog/${defaultLocale}/${file}`);
       const translation = read(`src/content/blog/${locale}/${file}`);
       for (const key of ['date', 'author', 'glyph']) {
+        /* `author` is optional. Asserting equality of two undefineds is
+           harmless; asserting the key exists would fail every post on a site
+           that does not use bylines. */
         assert.equal(
           field(translation, key),
           field(source, key),

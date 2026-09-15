@@ -2,7 +2,6 @@
 title: Tools that stay out of the way
 description: Why we stopped adding features to our internal tools, and what happened to the ones we removed.
 date: 2026-01-20
-author: Ada Fournier
 glyph: grid
 ---
 

@@ -2,7 +2,6 @@
 title: Translating a static site without a CMS
 description: A translation is a file next to the original. Everything else follows from that one decision.
 date: 2026-03-04
-author: Clara Wenzel
 glyph: arc
 ---
 

@@ -12,9 +12,17 @@ make that failure impossible rather than unlikely.
 ## What this repository is
 
 An Astro site in four languages, and the workflow that keeps the other three up
-to date with the first one. The site itself is deliberately thin: a home page,
-an about page, a Markdown journal, dummy copy, four SVGs and no colour. The part
-worth copying is everything under `scripts/`, `src/i18n/` and this file.
+to date with the first one.
+
+The site's content is this project's own documentation, so the demo is the thing
+it documents: the pages explaining the workflow are published in the four
+languages that workflow produced. Keep that property. A change to how
+translation works that leaves the copy describing the old behaviour has broken
+the demo, not just the docs.
+
+The site itself stays deliberately thin: a home page, an about page, a Markdown
+journal, four SVGs and no colour. The part worth copying is everything under
+`scripts/`, `src/i18n/` and this file.
 
 **English is the source. Everything else is generated and reviewed.** Nobody
 hand-writes a French string, and no agent should either. The way to change the

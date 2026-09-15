@@ -49,6 +49,35 @@ That is a real fresh clone. Edit one English sentence and run it again: that
 string moves to `out of date` in all three languages, without anyone having to
 remember that it changed.
 
+```text
+  src/i18n/strings/en.json          authored by hand. The only files that
+  src/content/blog/en/*.md          define which strings exist
+          │
+          │  npm run i18n:status
+          │     compares each English string against the hash the lock file
+          │     recorded for it, per locale
+          ▼
+  ┌────────────────────────────────────────────────────────────────────┐
+  │  fr  current        de  ~ out of date        es  + missing          │
+  └────────────────────────────────────────────────────────────────────┘
+          │
+          │  npm run i18n:translate
+          │     sends only what is behind, every locale in ONE AI Glot batch
+          ▼
+  ┌──────────────┐   create ──▶ plan ──▶ approve ──▶ poll ──▶ download
+  │   AI Glot    │              (free)   (the only call that spends credits)
+  └──────────────┘
+          │
+          │  writes the results back as ordinary files
+          ▼
+  src/i18n/strings/{fr,de,es}.json      generated. Never edited by hand
+  src/content/blog/{fr,de,es}/*.md
+  .i18n-lock.json                       records the English hash each
+          │                             translation was made from
+          ▼
+       git diff                         the review step, which stays with a person
+```
+
 **One command translates exactly that**, for every language, in one batch:
 
 ```bash
@@ -58,10 +87,26 @@ git diff                              # the review step, which stays with a pers
 ```
 
 **An untranslated page is a decision, not an accident.** One word in
-`src/i18n/config.ts` decides whether `/de/about` serves the English text with a
-notice, or sends the reader to `/about`. Either way it canonicalises to the
-English URL and is never advertised as the German alternate, which is what
-stops four URLs competing for one page's ranking.
+`src/i18n/config.ts` decides what a locale does with a page it has not
+translated yet:
+
+```text
+  a reader opens /de/blog/typography-notes, which German has not translated
+
+  untranslated: 'fallback'               untranslated: 'redirect'
+  ───────────────────────────            ───────────────────────────
+  200, the English body                  sent to /blog/typography-notes
+  a notice saying it is not translated    nothing is served under /de/
+  canonical points at /blog/…            the shared link stops working
+  not advertised as the German           the locale stays honestly small
+    alternate in hreflang
+
+  right once a locale is substantial     right while a locale is thin
+```
+
+Either way the page canonicalises to the English URL and is never advertised as
+the German alternate, which is what stops four URLs competing for one page's
+ranking.
 
 **An agent can run the whole thing.** `AGENTS.md` (symlinked as `CLAUDE.md`) is
 the manual: the workflow, how to set AI Glot up, the REST endpoints if you
@@ -96,6 +141,9 @@ test/                     assertions that need no network and no key
 | Missing page | `fallback` (English body, notice, canonical home) or `redirect`, chosen in `src/i18n/config.ts` |
 | Language picker | in the navbar, no JavaScript, keeps the reader on the same page, and marks languages that do not have it |
 | Adding a language | one entry in `src/i18n/config.ts`, then `npm run i18n:translate` |
+
+The demo site is its own documentation: the pages explain this workflow, in the
+four languages the workflow produced.
 
 Every French, German and Spanish string and post in this repository was
 produced by AI Glot through `npm run i18n:translate`, not written by hand. The

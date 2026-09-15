@@ -2,7 +2,6 @@
 title: "Notes sur la typographie pour quatre alphabets"
 description: "De petites décisions sur la longueur des lignes, les chiffres et les guillemets pour éviter qu'une page ne semble traduite."
 date: 2026-07-01
-author: Bruno Reis
 glyph: split
 ---
 Une page traduite peut être correcte et pourtant sembler maladroite. Généralement, c'est une question de typographie.

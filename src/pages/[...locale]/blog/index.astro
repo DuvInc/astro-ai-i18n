@@ -60,7 +60,8 @@ const dateFormat = new Intl.DateTimeFormat(localeConfig[locale].language, {
                   {/* The date comes from the English file for every locale: a
                       post has one publication date, whatever language you read
                       it in. Only the formatting is localized. */}
-                  {dateFormat.format(post.source.data.date)} · {post.source.data.author}
+                  {dateFormat.format(post.source.data.date)}
+                  {post.source.data.author && <> · {post.source.data.author}</>}
                   {!post.translated && <em>EN</em>}
                 </p>
               </div>

@@ -35,7 +35,7 @@ const API = process.env.AIGLOT_API_URL ?? 'https://api.ai-glot.com/v1';
  * what makes the distinction worth learning once.
  */
 export const HOUSE_RULES = [
-  'Keep the studio name Meridian exactly as written, in every language.',
+  'Keep the product name AI Glot and the site name AI i18n exactly as written, in every language.',
   /* Added after a real run: Spanish translated the section name in the page
      heading ("Journal") but not in the navigation ("Diario"), so the menu and
      the page it opened disagreed. Either answer was defensible; disagreeing

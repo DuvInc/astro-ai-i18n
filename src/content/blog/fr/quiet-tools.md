@@ -2,7 +2,6 @@
 title: "Des outils qui s'effacent"
 description: "Pourquoi nous avons cessé d'ajouter des fonctionnalités à nos outils internes, et ce qu'est devenu ce que nous avons supprimé."
 date: 2026-01-20
-author: Ada Fournier
 glyph: grid
 ---
 Chaque outil que nous créons pour nous-mêmes commence de la même manière. Quelqu'un fait une tâche manuellement pour la troisième fois, s'agace, et une semaine plus tard, un script apparaît. Ce script est généralement la meilleure version que l'outil connaîtra.

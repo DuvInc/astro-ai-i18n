@@ -2,7 +2,6 @@
 title: "Tools, die sich im Hintergrund halten"
 description: "Warum wir aufgehört haben, Funktionen in unsere internen Tools einzubauen, und was mit denen passierte, die wir entfernt haben."
 date: 2026-01-20
-author: Ada Fournier
 glyph: grid
 ---
 Jedes Tool, das wir für uns selbst bauen, beginnt gleich. Jemand erledigt etwas zum dritten Mal von Hand, regt sich darüber auf, und eine Woche später gibt es ein Skript. Dieses Skript ist meistens die beste Version des Tools, die es jemals geben wird.

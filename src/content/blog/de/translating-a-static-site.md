@@ -2,7 +2,6 @@
 title: "Übersetzung einer statischen Seite ohne CMS"
 description: "Eine Übersetzung ist eine Datei neben dem Original. Alles andere ergibt sich aus dieser einen Entscheidung."
 date: 2026-03-04
-author: Clara Wenzel
 glyph: arc
 ---
 Die erste mehrsprachige Seite, die wir bauten, nutzte eine Übersetzungsplattform. Die Texte lagen in einer Weboberfläche, die Seite lud sie zum Build-Zeitpunkt, und jede Frage darüber, was sich geändert hatte, erforderte einen Login und eine manuelle Prüfung.

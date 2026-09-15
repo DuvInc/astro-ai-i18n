@@ -69,13 +69,13 @@ const leaving = !translated && untranslated === 'redirect';
       </section>
 
       <section class="section page">
-        <h2>{copy.about.team.title}</h2>
+        <h2>{copy.about.ships.title}</h2>
         <div class="grid" style="margin-top:2rem">
-          {copy.about.team.members.map((member, index) => (
+          {copy.about.ships.items.map((item, index) => (
             <article class="card">
               <Glyph name={(['grid', 'arc', 'stack', 'split'] as const)[index % 4]} size={36} />
-              <h3 style="margin-top:1rem">{member.name}</h3>
-              <p class="meta">{member.role}</p>
+              <h3 style="margin-top:1rem">{item.title}</h3>
+              <p class="meta">{item.body}</p>
             </article>
           ))}
         </div>

@@ -2,7 +2,6 @@
 title: "Traduire un site statique sans CMS"
 description: "Une traduction est un fichier placé à côté de l'original. Tout le reste découle de cette seule décision."
 date: 2026-03-04
-author: Clara Wenzel
 glyph: arc
 ---
 Le premier site multilingue que nous avons construit utilisait une plateforme de traduction. Les textes vivaient dans une interface web, le site les récupérait lors du build, et chaque question sur un changement nécessitait que quelqu'un se connecte pour vérifier.

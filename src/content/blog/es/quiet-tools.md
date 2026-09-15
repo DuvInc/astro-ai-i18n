@@ -2,7 +2,6 @@
 title: "Herramientas que no estorban"
 description: "Por qué dejamos de añadir funciones a nuestras herramientas internas y qué pasó con las que eliminamos."
 date: 2026-01-20
-author: Ada Fournier
 glyph: grid
 ---
 Cada herramienta que creamos para nosotros mismos empieza igual. Alguien hace algo a mano por tercera vez, se harta y, una semana después, hay un script. Ese script suele ser la mejor versión que tendrá la herramienta.

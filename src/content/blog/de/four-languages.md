@@ -2,7 +2,6 @@
 title: "Was uns der Release in vier Sprachen gelehrt hat"
 description: "Sechs Monate, vier Regionen und die drei Fehler, die uns die meiste Zeit gekostet haben."
 date: 2026-05-12
-author: Bruno Reis
 glyph: stack
 ---
 Letzten Frühling haben wir unser erstes richtig mehrsprachiges Produkt veröffentlicht: vier Sprachen, ein Build, ein Repository. Hier ist, was schiefgelaufen ist, geordnet nach der Schwere der Auswirkungen.

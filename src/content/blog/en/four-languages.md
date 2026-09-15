@@ -2,7 +2,6 @@
 title: What shipping in four languages taught us
 description: Six months, four locales, and the three mistakes that cost us the most time.
 date: 2026-05-12
-author: Bruno Reis
 glyph: stack
 ---
 

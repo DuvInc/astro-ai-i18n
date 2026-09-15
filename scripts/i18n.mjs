@@ -119,10 +119,23 @@ function uiWrite(locale, translated, english) {
    * `name` stay English), then whatever the locale already had so untouched
    * strings survive, then what came back.
    */
-  const merged = structuredClone(JSON.parse(read(`${UI_DIR}/en.json`)));
+  const english = JSON.parse(read(`${UI_DIR}/en.json`));
+  const merged = structuredClone(english);
+  const known = new Set(Object.keys(flatten(english)));
   if (existsSync(path.join(ROOT, file))) {
     for (const [pointer, text] of Object.entries(flatten(JSON.parse(read(file))))) {
-      setPath(merged, pointer, text);
+      /*
+       * Only pointers English still has.
+       *
+       * `setPath` creates whatever path it is given, so without this filter a
+       * key deleted from en.json is resurrected in every locale file on the
+       * next write, forever. It reads as a translation of a string that no
+       * longer exists, nothing renders it, and nothing reports it either: the
+       * status command walks the English shape and never looks at the extra.
+       * Caught by `no locale file invents a key English does not have` in
+       * test/i18n.test.mjs, which is the only thing that can see it.
+       */
+      if (known.has(pointer)) setPath(merged, pointer, text);
     }
   }
   for (const [pointer, text] of Object.entries(translated)) setPath(merged, pointer, text);
@@ -225,7 +238,7 @@ function blogWrite(locale, slug, translated) {
     `title: ${JSON.stringify(translated[`${slug}::title`])}`,
     `description: ${JSON.stringify(translated[`${slug}::description`])}`,
     `date: ${field(front, 'date')}`,
-    `author: ${field(front, 'author')}`,
+    ...(field(front, 'author') ? [`author: ${field(front, 'author')}`] : []),
     `glyph: ${field(front, 'glyph') ?? 'grid'}`,
     '---',
     '',

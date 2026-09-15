@@ -32,7 +32,10 @@ const blog = defineCollection({
        the English file even on a translated page, so a post cannot be published
        on one date in English and another in German. */
     date: z.coerce.date(),
-    author: z.string(),
+    /* Optional: this site's own posts are project documentation and carry no
+       byline. A real blog sets it, and the translation script copies it from
+       the English file rather than translating it, like `date` and `glyph`. */
+    author: z.string().optional(),
     /* One of the names in `src/components/Glyph.astro`. Data, not copy: a
        translated glyph name draws nothing. */
     glyph: z.enum(['grid', 'arc', 'stack', 'split']).default('grid'),

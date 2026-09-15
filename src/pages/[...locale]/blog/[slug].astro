@@ -85,7 +85,8 @@ const dateFormat = new Intl.DateTimeFormat(localeConfig[locale].language, {
 
         <header class="measure">
           <p class="meta">
-            {copy.blog.published} {dateFormat.format(post.source.data.date)} · {post.source.data.author}
+            {copy.blog.published} {dateFormat.format(post.source.data.date)}
+            {post.source.data.author && <> · {post.source.data.author}</>}
           </p>
           <h1 style="margin-top:0.75rem">{post.entry.data.title}</h1>
           <p class="lead" style="margin-top:1.25rem">{post.entry.data.description}</p>

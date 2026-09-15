@@ -1,13 +1,13 @@
 {
   "site": {
-    "name": "Meridian",
-    "tagline": "Un petit studio qui crée des outils pour ceux qui lisent en plusieurs langues."
+    "name": "AI i18n",
+    "tagline": "Un template Astro où l'anglais est écrit à la main et les autres langues sont générées, vérifiées via un diff et synchronisées par un lock file."
   },
   "nav": {
     "home": "Accueil",
     "about": "À propos",
     "blog": "Journal",
-    "cta": "Contact",
+    "cta": "Voir le dépôt",
     "skipToContent": "Aller au contenu"
   },
   "picker": {
@@ -19,118 +19,126 @@
     "stale": "L'original anglais de cette page a été modifié depuis cette traduction."
   },
   "footer": {
-    "rights": "Tous droits réservés.",
+    "rights": "Sous licence MIT.",
     "builtWith": "Construit avec Astro. Traduit avec AI Glot.",
     "sections": "Sections",
     "languages": "Langues"
   },
   "home": {
     "meta": {
-      "title": "Meridian: outils pour équipes multilingues",
-      "description": "Meridian est un petit studio créant des outils rapides et discrets pour les équipes qui publient simultanément en plusieurs langues."
+      "title": "AI i18n : un template Astro multilingue",
+      "description": "Template Astro où l'anglais est la source, les autres langues sont générées par AI Glot et un lock file indique les traductions obsolètes."
     },
     "hero": {
-      "eyebrow": "Studio",
-      "title": "Publiez une fois. Lisez partout.",
-      "body": "Nous créons des outils compacts et rapides pour les équipes dont les lecteurs ne parlent pas tous la même langue. Pas de tableaux de bord inutiles, pas de tarification par utilisateur, pas de filigrane sur vos travaux.",
+      "eyebrow": "Template Astro",
+      "title": "Écrivez dans une langue. Publiez-en quatre.",
+      "body": "Ce site est à la fois une démo et une documentation. Il est publié en anglais, français, allemand et espagnol. Chaque mot hors version anglaise a été produit par une seule commande et vérifié via un diff.",
       "primary": "Lire le journal",
-      "secondary": "À propos du studio"
+      "secondary": "À propos du projet"
     },
     "features": {
-      "title": "Nos axes de travail",
-      "body": "Trois problèmes, choisis parce que nous y avons nous-mêmes été confrontés à maintes reprises.",
+      "title": "Ce que le template résout concrètement",
+      "body": "Traduire un site une seule fois est facile. Voici les trois problèmes qui apparaissent ensuite.",
       "items": [
         {
-          "title": "Un contenu toujours synchronisé",
-          "body": "Une traduction n'est utile que tant qu'elle correspond à l'original. Nous créons le mécanisme qui vous avertit dès qu'elle ne correspond plus."
+          "title": "Le retard est un fait, pas un sentiment",
+          "body": "Un fichier de verrouillage stocke le hash du texte anglais utilisé pour chaque traduction. L'outil peut ainsi distinguer ce qui n'a jamais été traduit de ce qui l'a été avant que l'anglais ne change. Modifiez une phrase et il indique précisément ce qui est obsolète, dans chaque langue."
         },
         {
-          "title": "Des pages au chargement instantané",
-          "body": "Sortie statique, aucun runtime de framework dans le navigateur, aucun saut de mise en page. Une page doit être lisible avant même qu'on s'aperçoive qu'elle est chargée."
+          "title": "Chaque langue répond pour chaque page",
+          "body": "Une page non encore traduite existe tout de même dans cette langue. Elle affiche le texte anglais avec un avis et un lien canonique vers l'accueil, ou elle redirige. Basculer entre ces deux options se fait via un seul mot dans un fichier de configuration."
         },
         {
-          "title": "Des outils que votre équipe maîtrise",
-          "body": "Des fichiers simples dans un dépôt que vous contrôlez, lisibles par l'humain et par la machine. Rien d'important ne réside dans la base de données d'un tiers."
+          "title": "Un seul lot, pas un par langue",
+          "body": "Tout le retard est traité dans un seul lot AI Glot: une analyse, un plan, une approbation. Le traducteur voit l'ensemble du site, ce qui garantit la cohérence d'un terme entre un libellé de menu et la page qu'il ouvre."
         }
       ]
     },
     "numbers": {
-      "title": "Le studio en quatre chiffres",
+      "title": "Les chiffres",
       "items": [
         {
           "value": "4",
-          "label": "langues publiées"
+          "label": "langues publiées ici"
         },
         {
-          "value": "12",
-          "label": "projets livrés"
+          "value": "1",
+          "label": "lot par cycle de traduction"
         },
         {
-          "value": "2019",
-          "label": "fondation"
+          "value": "0",
+          "label": "traductions écrites à la main"
         },
         {
-          "value": "6",
-          "label": "personnes"
+          "value": "2",
+          "label": "façons de traiter une page non traduite"
         }
       ]
     },
     "cta": {
-      "title": "Vous travaillez sur un projet multilingue ?",
-      "body": "Nous acceptons deux ou trois projets par an. Dites-nous ce que vous construisez et nous vous dirons honnêtement si nous sommes le studio adapté.",
-      "action": "Nous contacter"
+      "title": "Récupérez-le et modifiez le contenu",
+      "body": "Remplacez l'anglais, définissez vos langues dans un seul fichier de config, lancez une commande. Rien sous src/ ou scripts/ n'a besoin d'être édité pour changer de langue, de contenu ou de comportement.",
+      "action": "À propos de ce projet"
     }
   },
   "about": {
     "meta": {
-      "title": "À propos de Meridian",
-      "description": "Qui nous sommes, comment nous travaillons et les trois règles que nous ne transgressons jamais."
+      "title": "À propos de ce projet",
+      "description": "Ce que ce template Astro propose, la décision centrale sur laquelle il repose et ce qu'il ne prétend pas faire."
     },
-    "title": "À propos du studio",
-    "lead": "Meridian se compose de six personnes réparties dans deux villes. Nous concevons des logiciels pour les éditeurs multilingues depuis 2019, et nous écrivons toujours la majeure partie du code à la main.",
+    "title": "À propos de ce projet",
+    "lead": "astro-ai-i18n est un template Astro open-source pour les sites publiés en plusieurs langues. L'anglais est rédigé à la main; le français, l'allemand et l'espagnol sont générés via la CLI AI Glot, enregistrés comme des fichiers ordinaires et revus comme tout autre changement.",
     "sections": [
       {
-        "title": "Notre façon de travailler",
-        "body": "Un seul projet à la fois, en présence des personnes qui assureront sa maintenance. Nous rédigeons la documentation pendant le développement, et non après, car la version écrite a posteriori est celle que personne ne lit."
+        "title": "La décision centrale",
+        "body": "L'anglais est la source et personne ne modifie un fichier généré. Pour modifier le français, il faut modifier l'anglais et relancer la traduction. Une correction manuelle dans un fichier généré est perdue silencieusement lors du cycle suivant, c'est pourquoi cette règle est absolue et non une préférence."
       },
       {
-        "title": "Nos convictions",
-        "body": "Un outil doit être lisible. Si vous ne pouvez pas ouvrir un fichier pour comprendre son fonctionnement, vous n'en êtes pas le propriétaire, peu importe la licence. C'est pourquoi tout ce que nous livrons est en texte brut dans un dépôt que vous contrôlez."
+        "title": "L'étape de la revue",
+        "body": "La traduction automatique est acceptable ici car un humain vérifie les différences avant la publication. C'est tout le principe de sécurité, et c'est pourquoi le flux de travail écrit des fichiers bruts dans le dépôt plutôt que d'appeler une API lors du build."
       },
       {
-        "title": "Où nous sommes",
-        "body": "Lisbonne et Berlin, cinq heures de chevauchement, et aucun bureau. Nous nous réunissons en personne deux fois par an, ce qui s'avère être exactement suffisant."
+        "title": "Ce qu'il ne fait pas",
+        "body": "Il ne détecte pas la langue du visiteur, ne redirige pas, ne localise pas les URL et ne promet pas des traductions parfaites. Il rend l'écart entre les langues visible et facile à combler, ce qui est généralement le point faible."
       }
     ],
-    "team": {
-      "title": "L'équipe",
-      "members": [
+    "ships": {
+      "title": "Contenu du pack",
+      "items": [
         {
-          "name": "Ada Fournier",
-          "role": "Fondateur, ingénierie"
+          "title": "La commande status",
+          "body": "Une seule commande indique ce qui manque, ce qui n'est plus à jour et le coût en crédits, avant tout envoi."
         },
         {
-          "name": "Bruno Reis",
-          "role": "Design"
+          "title": "La commande translation",
+          "body": "Envoie précisément les éléments manquants, par lot pour chaque langue, puis écrit les résultats dans les fichiers et met à jour le lock."
         },
         {
-          "name": "Clara Wenzel",
-          "role": "Éditorial"
+          "title": "Le mécanisme de fallback",
+          "body": "Les pages non traduites affichent la version anglaise avec un avis, ou redirigent. Dans les deux cas, elles sont canonisées vers l'URL anglaise et ne sont jamais indexées dans la langue cible."
         },
         {
-          "name": "Dario Estévez",
-          "role": "Infrastructure"
+          "title": "Le manuel de l'agent",
+          "body": "Un fichier AGENTS.md qui guide un assistant pour installer AI Glot, choisir entre le CLI et l'API REST, et éviter les erreurs classiques pour ce type de site."
         }
+      ]
+    },
+    "team": {
+      "members": [
+        {},
+        {},
+        {},
+        {}
       ]
     }
   },
   "blog": {
     "meta": {
-      "title": "Journal, par Meridian",
-      "description": "Notes sur la création de produits multilingues: ce qui a fonctionné, ce qui a échoué et ce que nous ferions différemment."
+      "title": "Journal, par AI i18n",
+      "description": "Notes sur la création de sites multilingues : ce qui a fonctionné, ce qui a échoué et ce que nous ferions différemment."
     },
     "title": "Journal",
-    "lead": "Notes du studio. Ce que nous avons construit, ce qui a échoué et ce que nous ferions différemment.",
+    "lead": "Notes sur l'édition multilingue. Chaque entrée ici existe dans les langues traduites et revient à l'anglais pour celles qui ne le sont pas.",
     "readMore": "Lire",
     "published": "Publié le",
     "back": "Retour au journal",

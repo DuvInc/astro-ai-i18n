@@ -2,7 +2,6 @@
 title: "Traducir un sitio estático sin un CMS"
 description: "Una traducción es un archivo junto al original. Todo lo demás se deriva de esa única decisión."
 date: 2026-03-04
-author: Clara Wenzel
 glyph: arc
 ---
 El primer sitio multilingüe que construimos usaba una plataforma de traducción. El texto vivía en una interfaz web, el sitio lo recuperaba al compilar y cada pregunta sobre qué había cambiado requería que alguien iniciara sesión y mirara.

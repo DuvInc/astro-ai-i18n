@@ -2,7 +2,6 @@
 title: "Lo que aprendimos al lanzar en cuatro idiomas"
 description: "Seis meses, cuatro regiones y los tres errores que más tiempo nos costaron."
 date: 2026-05-12
-author: Bruno Reis
 glyph: stack
 ---
 La primavera pasada lanzamos nuestro primer producto correctamente multilingüe: cuatro idiomas, una compilación, un repositorio. Esto es lo que salió mal, en orden de impacto.

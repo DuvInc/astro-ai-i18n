@@ -2,7 +2,6 @@
 title: "Ce que le déploiement en quatre langues nous a appris"
 description: "Six mois, quatre locales et les trois erreurs qui nous ont coûté le plus de temps."
 date: 2026-05-12
-author: Bruno Reis
 glyph: stack
 ---
 Nous avons lancé notre premier produit véritablement multilingue le printemps dernier : quatre langues, un build, un seul dépôt. Voici ce qui a échoué, par ordre d'importance.

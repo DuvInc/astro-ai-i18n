@@ -2,7 +2,6 @@
 title: "Notizen zum Satzbau für vier Alphabete"
 description: "Kleine Entscheidungen zu Zeilenlänge, Ziffern und Anführungszeichen, die verhindern, dass eine Seite übersetzt aussieht."
 date: 2026-07-01
-author: Bruno Reis
 glyph: split
 ---
 Eine übersetzte Seite kann korrekt sein und trotzdem falsch aussehen. Meistens liegt es an der Typografie.
