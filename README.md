@@ -111,7 +111,9 @@ ranking.
 **An agent can run the whole thing.** `AGENTS.md` (symlinked as `CLAUDE.md`) is
 the manual: the workflow, how to set AI Glot up, the REST endpoints if you
 prefer them to the CLI, and the mistakes this shape of site makes.
-`.claude/skills/translate-site/` is the same thing as a skill.
+[`skills/translate-site/`](./skills/translate-site/SKILL.md) is the same thing
+as a skill, symlinked into `.claude/skills/` so Claude Code picks it up on its
+own.
 
 ## What is in the repository
 
@@ -128,6 +130,8 @@ src/
 scripts/
   i18n.mjs                status · translate · bless · check
   lib/aiglot.mjs          the only file that talks to AI Glot
+skills/
+  translate-site/         the workflow as a skill, symlinked into .claude/skills/
 test/                     assertions that need no network and no key
 ```
 
@@ -163,6 +167,42 @@ for about 141 credits.
 Creating a translation and planning it are free and repeatable; only approval
 spends credits, and `--dry-run` never reaches it. The full setup walkthrough,
 the endpoint table and the cost model are in [AGENTS.md](./AGENTS.md).
+
+## Deploying
+
+The build is static, so any host that serves files works: Cloudflare, Netlify,
+Vercel, GitHub Pages, S3, an nginx you own. Nothing in this repository calls an
+API at runtime, and the translations are committed files rather than something
+fetched on request.
+
+**Cloudflare** is what I use, and the shortest path is Workers with static
+assets:
+
+```bash
+npm run build
+npx wrangler deploy      # after adding a wrangler.jsonc pointing at ./dist
+```
+
+Cloudflare Pages, Netlify and Vercel all work the same way: build command
+`npm run build`, output directory `dist`.
+
+One thing to decide per host, and only if you chose `untranslated: 'redirect'`
+in `src/i18n/config.ts`. A static build has no server to answer with a 301, so
+that mode renders a meta-refresh page (`src/layouts/Redirect.astro`). It works
+everywhere and it is not what you want in production:
+
+| Host | The better answer |
+| :--- | :--- |
+| Cloudflare | a Redirect Rule, or `_redirects` on Pages |
+| Netlify | `public/_redirects` |
+| Vercel | `redirects` in `vercel.json` |
+| nginx | a `return 301` in the location block |
+
+Move it to a rule at the edge and delete that layout. A rule answers before any
+HTML is sent, which is faster and does not flash a blank page at the reader.
+
+The default mode, `fallback`, needs none of this: every locale serves a real
+page at a real URL, so there is nothing to redirect.
 
 ## Making it yours
 
