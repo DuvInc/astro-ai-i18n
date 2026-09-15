@@ -279,7 +279,7 @@ function status() {
   const blog = blogGaps();
   let words = 0;
 
-  console.log(`\nUI copy — ${UI_DIR}/en.json, ${ui.total} strings\n`);
+  console.log(`\nUI copy: ${UI_DIR}/en.json, ${ui.total} strings\n`);
   for (const locale of targets) {
     const { missing, stale } = ui.gaps[locale];
     words += [...missing, ...stale].reduce((sum, pointer) => sum + countWords(ui.english[pointer]), 0);
@@ -289,7 +289,7 @@ function status() {
     );
   }
 
-  console.log(`\nJournal — ${BLOG_DIR}/${defaultLocale}/, ${blog.total} posts\n`);
+  console.log(`\nJournal: ${BLOG_DIR}/${defaultLocale}/, ${blog.total} posts\n`);
   for (const locale of targets) {
     const { missing, stale } = blog.gaps[locale];
     for (const slug of [...missing, ...stale]) {
