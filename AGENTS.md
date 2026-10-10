@@ -44,7 +44,7 @@ French is to change the English and re-run the translation.
 | `src/pages/[...locale]/` | four route files that answer for every locale |
 | `scripts/i18n.mjs` | status, translate, bless, check |
 | `scripts/lib/aiglot.mjs` | the only file that talks to AI Glot |
-| `skills/translate-site/SKILL.md` | the procedure, as a skill. Symlinked from `.claude/skills/` so Claude Code finds it |
+| `skills/translate-site/SKILL.md` | the procedure, as a skill. Copy the folder into your agent's skills directory to use it |
 
 ## Commands
 

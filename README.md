@@ -163,7 +163,7 @@ scripts/
   i18n.mjs                status · translate · bless · check
   lib/aiglot.mjs          the only file that talks to AI Glot
 skills/
-  translate-site/         the workflow as a skill, symlinked into .claude/skills/
+  translate-site/         the workflow as a skill
 test/                     assertions that need no network and no key
 ```
 
