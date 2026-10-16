@@ -1,5 +1,7 @@
 # astro-ai-i18n
 
+![astro-ai-i18n: a dithered banner with the project name and its one-line summary](docs/hero.png)
+
 An Astro site in four languages. You write English. A command translates the
 rest through [AI Glot](https://ai-glot.com), writes the result back as files,
 and tells you which translations have fallen behind.
