@@ -74,8 +74,9 @@ major.
 3. **Every locale answers for every page.** `/de/blog/four-languages` exists
    whether or not the German file does. What it serves is
    `untranslated` in `src/i18n/config.ts`.
-4. **A fallback page is never indexed as itself.** It canonicalises to the
-   English URL and is not advertised as that locale's alternate. Without this
+4. **A fallback page is never indexed as itself.** It carries
+   `noindex, follow`, canonicalises to the English URL and is not advertised as
+   that locale's alternate. Without this
    you have told search engines that one page exists at four URLs in four
    languages: rankings split and the wrong URL wins.
 5. **A missing string falls back key by key, and is still reported.** The page

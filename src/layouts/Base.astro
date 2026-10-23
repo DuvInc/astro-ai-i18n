@@ -44,6 +44,12 @@ const url = (code: Locale) => new URL(localizedPath(code, path), site).href;
  * engines that one page exists at four URLs in four languages: the rankings
  * split and the wrong URL wins. So a fallback page canonicalises home and is
  * never advertised as the German alternate of anything.
+ *
+ * It also says `noindex, follow`: the canonical asks for consolidation, the
+ * robots meta keeps the duplicate out of the index while links on it are still
+ * followed. The two together are slightly redundant by design. (Google treats a
+ * canonical as a hint and noindex as a directive, so the directive is the one
+ * that holds if the hint is ignored.)
  */
 const canonical = translated ? url(locale) : url(defaultLocale);
 const alternates = availableIn;
@@ -56,6 +62,7 @@ const alternates = availableIn;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {!translated && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonical} />
 
     {alternates.map((code) => <link rel="alternate" hreflang={localeConfig[code].language} href={url(code)} />)}

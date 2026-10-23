@@ -120,7 +120,8 @@ export const untranslated: 'fallback' | 'redirect' = 'fallback';
   ───────────────────────────            ───────────────────────────
   200, the English body                  sent to /blog/typography-notes
   a notice saying it is not translated    nothing is served under /de/
-  canonical points at /blog/…            the shared link stops working
+  robots: noindex, follow                the shared link stops working
+  canonical points at /blog/…
   not listed as the German alternate     the locale stays honestly small
     in hreflang
 
