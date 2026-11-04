@@ -217,7 +217,7 @@ cp .env.example .env
 
 | | CLI (default) | API (`AIGLOT_TRANSPORT=api`) |
 | --- | --- | --- |
-| Install | `npm i -g @ai-glot/cli`, Node 20+ | nothing |
+| Install | `npm i -g @ai-glot/cli` (0.4.0 or later), Node 20+ | nothing |
 | Credentials | keychain, or `AIGLOT_API_KEY` | `AIGLOT_API_KEY` |
 | Retries, backoff, `Retry-After` | handled | yours to write |
 | Survives a REST shape change | yes | no |
