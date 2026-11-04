@@ -201,7 +201,7 @@ function cli({ content, filename, instruction, custom, quality, dryRun }) {
   }
 
   /* The only call that spends credits. Everything above this line is free. */
-  run(['batches', 'approve', id, '--quality', quality, '--instructions', custom, '--json']);
+  run(['batches', 'approve', id, '--quality', quality, '--instructions', custom, '--json', '--yes']);
 
   for (let attempt = 0; ; attempt += 1) {
     const batch = JSON.parse(run(['batches', 'get', id, '--json']));
