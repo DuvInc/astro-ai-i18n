@@ -243,3 +243,7 @@ MIT. See [LICENSE](./LICENSE), [CONTRIBUTING.md](./CONTRIBUTING.md) and
 
 AI Glot is a paid product. This repository calls its public CLI and API and is
 not otherwise affiliated with your use of it.
+
+If you run Astro sites for clients and would rather not host them yourself, I
+also build [Atelier201](https://atelier201.com): managed Astro sites that their
+owners edit in a form or by asking an assistant, with extra languages built in.
